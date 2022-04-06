@@ -75,7 +75,7 @@ Run 'ExJumpsActBouncingBallUnderAttack.m'
 
 Associated files: 'BouncingBallZSGame.m' and 'SaddlePointBouncingBall.m'
 
-It will create a simulation for the hybrid system in (44) for the following 
+It will create a simulation for the hybrid system in (18) for the following 
 parameters:
   \lambda=0.8,
   R_{D1}=10,
