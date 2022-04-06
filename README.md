@@ -15,9 +15,7 @@ Look up for the right version in 'View Version History'
 Content: (Download as a folder and add it to the Path in Matlab)
   - Hybrid Equations Toolbox
   - MotivExZeroSumFHHyGame
-
-
-  - Ex1D2PZeroSumHyGame.m
+  - Ex1D2PZeroSumFHHyGame.m
   - ExJumpsActBouncingBallUnderAttack.m
   - BouncingBallZSGame.m
   - SaddlePointBouncingBall.m
@@ -53,7 +51,7 @@ As a result,
           applying Theorem 3.6.
     
 Example 3.7 (Hybrid game with nonunique solutions)    
-Run 'Ex1D2PZeroSumHyGame.m'                      
+Run 'Ex1D2PZeroSumFHHyGame.m'                      
     
 In addition to the motivational example plot, 
     
