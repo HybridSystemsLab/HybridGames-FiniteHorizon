@@ -41,23 +41,27 @@ They are defined and can be modified in the 'Initialization' section.
   
 As a result, 
   - it will create the hybrid solution '(solphih,soluh,sollwh)', with hybrid 
-    time '(t,jv)', and running cost 'J' when jumps are triggered at x=\mu;
+    time '(t,jv)' when jumps are triggered at x=\mu, and the hybrid running 
+    cost 'J'. Alternatively, a running cost 'J_c' is computed using 
+    continuous-time methods, and a running cost 'J_d' is computed using 
+    discrete-time methods;
   - it will generate a plot (Figure 1) including:
-      1. Response of hybrid solution (blue and red) and response of continuous 
-          solution (green).
-      2. Input actions of hybrid solution (blue and red) and input actions of 
-          continuous solution (green).
-      3. Running cost of hybrid solution (blue and red), running cost of 
-          continuous solution (green), and optimal cost (black) calculated by 
-          applying Theorem 3.6.
-    
+      1. Response of hybrid solution (blue and red).
+      2. Hybrid running cost of solution (blue and red) calculated by 
+          applying Theorem 3.6, continuous-time-calculated running cost of 
+          solution (green), and discrete-time-calculated running cost (red). 
+              
 Example 3.7 (Hybrid game with nonunique solutions)    
 
 Run 'Ex1D2PZeroSumFHHyGame.m'                      
     
-In addition to the motivational example plot, 
-    
-  - it will create the continuous solution '(phik, uk,wk)', with time 't', 
+It will create a simulation for the hybrid system in (3) following the same 
+setting as in the motivational example. 
+
+As a result,
+  - it will create the hybrid solution '(solphih,soluh,sollwh)', with hybrid 
+    time '(t,jv)', and running cost 'Jh' when jumps are trigger at x=\mu;  
+  - it will create the continuous solution '(phik, uk, wk)', with time 't', 
     and running cost 'Jk' when it evolves from x=\mu via flow;
   - it will generate a plot (Figure 2) including:
       1. Response of hybrid solution (blue and red) and response of continuous 
