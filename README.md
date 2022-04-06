@@ -53,7 +53,7 @@ As a result,
           applying Theorem 3.6.
     
 Example 3.7 (Hybrid game with nonunique solutions)    
-Run 'Ex1D2PZeroSumHyGame.m'                        ????????????????????
+Run 'Ex1D2PZeroSumHyGame.m'                      
     
 In addition to the motivational example plot, 
     
