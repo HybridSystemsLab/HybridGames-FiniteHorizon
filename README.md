@@ -22,6 +22,7 @@ Content: (Download as a folder and add it to the Path in Matlab)
 
 ----------------------------------------------------------------------------
 Motivational Example
+
 Run 'MotivExZeroSumFHHyGame.m'
 
 It will create a simulation for the hybrid system in (3) for the following 
@@ -51,6 +52,7 @@ As a result,
           applying Theorem 3.6.
     
 Example 3.7 (Hybrid game with nonunique solutions)    
+
 Run 'Ex1D2PZeroSumFHHyGame.m'                      
     
 In addition to the motivational example plot, 
@@ -68,7 +70,9 @@ In addition to the motivational example plot,
           
 ----------------------------------------------------------------------------
 Example 3.8 (Boucing ball)
+
 Run 'ExJumpsActBouncingBallUnderAttack.m'
+
 Associated files: 'BouncingBallZSGame.m' and 'SaddlePointBouncingBall.m'
 
 It will create a simulation for the hybrid system in (44) for the following 
