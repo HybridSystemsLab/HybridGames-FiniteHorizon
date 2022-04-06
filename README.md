@@ -23,10 +23,10 @@ Content: (Download as a folder and add it to the Path in Matlab)
   - SaddlePointBouncingBall.m
 
 ----------------------------------------------------------------------------
-Example 3.11 (Hybrid game with nonunique solutions)
-Run 'Ex1D2PZeroSumHyGame.m'
+Motivational Example
+Run 'MotivExZeroSumFHHyGame.m'
 
-It will create a simulation for the hybrid system in (19) for the following 
+It will create a simulation for the hybrid system in (3) for the following 
 parameters:
   a=-1,
   b_1=b_2=1,
@@ -42,9 +42,7 @@ They are defined and can be modified in the 'Initialization' section.
   
 As a result, 
   - it will create the hybrid solution '(solphih,soluh,sollwh)', with hybrid 
-    time '(t,jv)', and running cost 'Jh' when jumps are trigger at x=\mu;
-  - it will create the continuous solution '(phik, uk,wk)', with time 't', 
-    and running cost 'Jk' when it evolves from x=\mu via flow;
+    time '(t,jv)', and running cost 'J' when jumps are triggered at x=\mu;
   - it will generate a plot (Figure 1) including:
       1. Response of hybrid solution (blue and red) and response of continuous 
           solution (green).
@@ -52,10 +50,26 @@ As a result,
           continuous solution (green).
       3. Running cost of hybrid solution (blue and red), running cost of 
           continuous solution (green), and optimal cost (black) calculated by 
-          applying Theorem 3.8
+          applying Theorem 3.6.
+    
+Example 3.7 (Hybrid game with nonunique solutions)    
+Run 'Ex1D2PZeroSumHyGame.m'                        ????????????????????
+    
+In addition to the motivational example plot, 
+    
+  - it will create the continuous solution '(phik, uk,wk)', with time 't', 
+    and running cost 'Jk' when it evolves from x=\mu via flow;
+  - it will generate a plot (Figure 2) including:
+      1. Response of hybrid solution (blue and red) and response of continuous 
+          solution (green).
+      2. Input actions of hybrid solution (blue and red) and input actions of 
+          continuous solution (green).
+      3. Running cost of hybrid solution (blue and red), running cost of 
+          continuous solution (green), and optimal cost (black) calculated by 
+          applying Theorem 3.6.
           
 ----------------------------------------------------------------------------
-Example 4.3 (Boucing ball)
+Example 3.8 (Boucing ball)
 Run 'ExJumpsActBouncingBallUnderAttack.m'
 Associated files: 'BouncingBallZSGame.m' and 'SaddlePointBouncingBall.m'
 
@@ -70,19 +84,19 @@ parameters:
 They are defined and can be modified in the 'Initialization' section.  
   
 As a result, 
-  - it will create the hybrid system in (44), calling it 'system_bb' as an
+  - it will create the hybrid system in (18), calling it 'system_bb' as an
     instance of 'BouncingBallZSGame.m', which invokes the class 'HybridSystem'
-    of the HyEQ Toolbox (see line 83); 
-  - it will generate a plot (Figure 2) including:
+    of the HyEQ Toolbox (see line 86); 
+  - it will generate a plot (Figure 3) including:
       1. Position of optimal solution,
       2. Velocity of optimal solution,
       3. Optimal input control action,
       4. Optimal input attack action,
       3. Running cost of optimal solution (blue and red) and optimal cost (black)
-        calculated by applying Theorem 3.8 and Corollary 4.2.
+        calculated by applying Theorem 3.6.
   - it will create a set of nonoptimal solutions '(phit,un,wn)', with hybrid 
     time '(t,jt)', and running cost 'Jt', by running 'SaddlePointBouncingBall.m'.
     Therein, the optimal feedbak laws are multiplied by varying factors,
     epsilonu and epsilonw, calculating the cost associated by this scalation,
-    and generating a plot in 3D (Figure 3) of the behavior of the cost vs the scalation factors.
+    and generating a plot in 3D (Figure 4) of the behavior of the cost vs the scalation factors.
     See in red the optimal cost and the saddle behavior around it.
